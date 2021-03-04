@@ -1,0 +1,289 @@
+@charset "utf-8";
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.header-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    z-index: 10000;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 150px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar__item:last-child {
+    margin-right: 70px;
+}
+
+.nav-bar__link {
+    display: block;
+    padding-right: 25px;
+    text-transform: uppercase;
+    color: #d3d3d3;
+    font-weight: 600;
+}
+
+.nav-bar__link--active:visited {
+    color: #1c1c1c;
+}
+
+.banner {
+    height: 500px;
+    background: url('assets/hero-pricing.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner__title {
+    padding-top: 250px;
+    font-size: 3em;
+    color: #FFF;
+    text-transform: uppercase;
+    border-top: 3px solid #FFF;
+    letter-spacing: 2;
+}
+
+button {
+    border-bottom: 2px solid #FFF;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    font-weight: 600;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+/*.banner__btn {
+    border-bottom: 2px solid #FFF;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    font-weight: 600;
+}*/
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.bloc-price {
+    margin: 60px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pricing {
+    position: relative;
+    background-color: #191919;
+    flex: 45%;
+    margin-right: 30px;
+    color: #FFF;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.pricing__title {
+    font-size: 2.1em;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    line-height: 2;
+    padding: 10px;
+}
+
+.princing__infos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #848384;
+    padding: 20px 0;
+}
+
+.pricing__price {
+    font-size: 70px;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing__list {
+    list-style: none;
+    background-color: #f7f7f7;
+    color: #848384;
+}
+
+.pricing__list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #8483841e;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.pricing__list li:last-child {
+    border-bottom: none;
+}
+
+.free {
+    margin-left: 15px;
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #54ca90;
+    color: #FFF;
+}
+
+.bloc-faq {
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-contains {
+    flex: 45%;
+    margin-right: 40px;
+}
+
+.faq {
+    margin-bottom: 30px;
+}
+
+.pricing__most {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #54ca90;
+    color: #FFF;
+    border-radius: 50%;
+    right: -15px;
+    top: -30px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.faq__title {
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #1c1c1c;
+    letter-spacing: 1.2;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    padding: 10px 0;
+/ border-bottom: 2px solid #1c1c1c; /
+}
+
+.faq__paragh {
+    line-height: 2;
+    color: #a7a7a7;
+    font-size: .98em;
+}
+
+.faq__paragh--link {
+    color: #54ca90;
+}
+
+.footer {
+    width: 100%;
+    background-color: #111111;
+    color: #4e4e4e;
+}
+
+.footer-container {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footer-nav_title {
+    font-size: 1em;
+    color: #e6e6e6;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-nav__item {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.footer-nav__link {
+    text-transform: capitalize;
+    display: block;
+    color: #4e4e4e;
+    line-height: 2;
+}
+
+.try-free__btn {
+    align-self: center;
+    border: none;
+    outline: none;
+    background: #e6e6e6;
+    padding: 15px 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #1c1c1c;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.try-free__infos {
+    line-height: 2;
+    margin-bottom: 20px;
+}
